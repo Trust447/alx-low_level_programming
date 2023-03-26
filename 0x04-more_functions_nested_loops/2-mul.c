@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * multiply two integers
+ * mul -  multiply two integers
  *
  * @a: first integer
  *
@@ -11,7 +11,7 @@
  * Return: return  results
  */
 
-int mul (int a, int b)
+int mul(int a, int b)
 {
 
 	return (a * b);
