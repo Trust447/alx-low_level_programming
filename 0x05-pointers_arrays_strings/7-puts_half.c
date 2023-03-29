@@ -23,3 +23,4 @@ void puts_half(char *str)
 	for (n = m; str[n] != '\0'; n++)
 		_putchar(str[n]);
 	_putchar('\n');
+}
