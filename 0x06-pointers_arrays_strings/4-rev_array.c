@@ -8,7 +8,7 @@
  * @n: is the number of elements to swap
  *
  * Return: nothing
-*/
+ */
 
 void reverse_array(int *a, int n)
 {
@@ -21,7 +21,7 @@ void reverse_array(int *a, int n)
 	 * then place the last array in
 	 * the first array then place
 	 * value in temp to last array
-	*/
+	 */
 	while (s < e)
 	{
 		temp = a[s];
