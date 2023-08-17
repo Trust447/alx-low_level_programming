@@ -1,5 +1,7 @@
-#ifndef _MAIN_H_
-#define __MAIN_H__
+#ifndef _LIST_H_
+#define _LIST_H_
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * struct dlistint_s - doubly linked list
  * @n: integer
@@ -9,8 +11,6 @@
  * Description: doubly linked list node structure
  *
  */
-#include <stdio.h>
-#include <stdlib.h>
 typedef struct dlistint_s
 {
 	int n;

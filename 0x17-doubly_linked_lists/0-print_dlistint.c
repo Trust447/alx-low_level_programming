@@ -1,4 +1,4 @@
-#include "main.h"
+#include "list.h"
 /**
  * size_t print_dlistint - prints node contents
  * @h: head of the list
