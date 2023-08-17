@@ -1,17 +1,23 @@
 #include "main.h"
 /**
  * size_t print_dlistint - prints node contents
- * @h: pointer to the node dlistint
+ * @h: head of the list
  * Return: count which is the number of nodes
  */
 size_t print_dlistint(const dlistint_t *h)
 {
 	int count;
-	for count = 0; h != NULL; count++;
+	if (h == NULL)
+		return (count);
+
+	while (h->prev != NULL)
+		h = h->prev;
+	while (h != NULL)
 	{
 		printf("%d\n", h -> n);
-		h = h -> next
-		count++
+		count++;
+		h = h->next;
+
 	}
 
 	return (count);
