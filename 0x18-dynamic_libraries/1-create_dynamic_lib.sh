@@ -1,4 +1,9 @@
 #!/bin/bash
-gcc -Wall -Wextra -Werror -pedantic -c -fPIC *.c
+C_FILES=$(ls *.c)
+for file in $C_FILES; do
+	gcc -Wall -Wextra -Werror -pedantic -c -fPIC "$file"
+done
 gcc -shared -o liball.so *.o
-export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
+rm -f *.o
+
+echo "Dynamic library liball.so created successfully!"
