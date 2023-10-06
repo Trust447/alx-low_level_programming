@@ -27,12 +27,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 		free(table); /* Free the previously allocated table */
 		return NULL;
 	}
-	/* Initialize each slot in the array to NULL */
-
-	for (i = 0; i < table->size; i++)
-	{
-		table->array[i] = NULL;
-	}
 
 	return (table);
 }
