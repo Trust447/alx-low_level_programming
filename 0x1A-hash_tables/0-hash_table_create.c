@@ -1,9 +1,9 @@
 #include "hash_tables.h"
 /**
- * hash_table_create - a table that takes in an index and gives out the value stored in the index
+ * hash_table_create - creates a hash table
  *
- * @unsigned long int size: the index parsed to the function
- * Return table if successful
+ * @size: @size: size of the array of the hash table
+ * Return: Pointer to the newly created hash table
  */
 
 hash_table_t *hash_table_create(unsigned long int size)
